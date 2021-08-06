@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { DemoComponent } from './demo/demo.component';
+import { BaiTapLayoutModule } from './bai-tap-layout/bai-tap-layout.module';
+import { DataBindingModule } from './DataBinding/DataBinding.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DemoComponent //các component trong module này (mỗi component sinh ra phải ở trong 1 module)
+    AppComponent,//các component trong module này (mỗi component sinh ra phải ở trong 1 module)
   ],
   imports: [
-    BrowserModule //nơi chèn các module khác vào
+    BrowserModule, BaiTapLayoutModule,DataBindingModule //nơi chèn các module khác vào
   ],
   providers: [], //nơi chèn các service vào
   bootstrap: [AppComponent] //Các component 
