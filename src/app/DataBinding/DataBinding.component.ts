@@ -46,11 +46,8 @@ import { Component, OnInit } from '@angular/core';
                         <td>{{product.price * product.quantity}}</td>
                     </tr>
                 </tbody>
-
             </table>
-
         </div>
-    
     `
 })
 
