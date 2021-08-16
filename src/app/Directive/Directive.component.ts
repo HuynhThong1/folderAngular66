@@ -143,19 +143,42 @@ import { Component, OnInit } from '@angular/core';
 
 
             <app-baitap-login></app-baitap-login>
-
             
 
+            <div style="margin-bottom: 500px; height: 500px">
+                <h3>Antd</h3>
+
+                <button nz-button nzType="primary">Primary Button</button>
+                <hr/>
+                <button nz-button nzType="primary" nzSize="large">
+                <i nz-icon nzType="down" nzTheme="outline"></i>
+                    Download
+                </button>
 
 
+                <button nz-button nzType="primary" nzSize="large" nzShape="round">
+                <i nz-icon nzType="download" nzTheme="outline"></i>
+                    Download
+                </button>
+            </div>
 
+            <div style="margin-bottom: 500px; height: 500px">
+                <h3>Direct Material</h3>
+
+
+                <button mat-flat-button color="accent">Accent</button>
+
+                <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+                    <mat-icon>favorite</mat-icon>
+                </button>
+            </div>
         </div>
     `
 })
 
 export class DirectiveComponent implements OnInit {
 
-    fontSize:number = 15;
+    fontSize: number = 15;
 
     tangFont = () => {
         this.fontSize += 2;
